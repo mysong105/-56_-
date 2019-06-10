@@ -71,20 +71,4 @@ for imagePath in paths.list_images(args["output"]):
         print("[INFO] deleting {}".format(imagePath))
         os.remove(imagePath)
         
-        
-        
-        
-        
-$ python download.py --urls urls.txt --output images/data
-[INFO] downloaded: images/data/00000000.jpg
-[INFO] downloaded: images/data/00000001.jpg
-[INFO] downloaded: images/data/00000002.jpg
-[INFO] downloaded: images/data/00000003.jpg
-...
-[INFO] downloaded: images/data/00000519.jpg
-[INFO] error downloading images/data/00000519.jpg...skipping
-[INFO] downloaded: images/data/00000520.jpg
-...
-[INFO] deleting images/data/00000211.jpg
-[INFO] deleting images/data/00000199.jpg
-...
+
