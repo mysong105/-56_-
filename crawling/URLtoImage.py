@@ -48,7 +48,7 @@ for url in urls:
         pass
 
 
-# loop over the image paths downloaded
+# image paths 반복
 for imagePath in paths.list_images(args["output"]):
     # initialize if the image should be deleted or not
     delete = False
