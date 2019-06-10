@@ -1,6 +1,6 @@
 
 <h3>crawling은 Google 이미지에서 진행하였고 특정 키워드별로 검색하여 결과를 얻었습니다.</h3>
-<BR>
+<BR><BR>
 
 1차적으로 Google 이미지 개발자 도구 console 창에서 JavaScript 코드를 통해 키워드에 따른 이미지 url을 수집하였고,
 
@@ -10,7 +10,7 @@
 ### * JavaScript
 Google 이미지에서 키워드 검색 -> 개발자 도구 console 창 -> 전체 Scroll down 
 -> 위의 JavaScript 코드 수행 -> URLs 수집
-<BR>
+<BR><BR>
 ![Alt text](https://github.com/mysong105/team56/blob/master/crawling/javascript.JPG)
 <BR>
 
