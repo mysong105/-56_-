@@ -8,7 +8,9 @@
 <BR>
   
 ### * JavaScript
-Google 이미지에서 키워드 검색 -> 개발자 도구 console 창 -> 전체 Scroll down -> 위의 JavaScript 코드 수행 -> URLs 수집
+Google 이미지에서 키워드 검색 -> 개발자 도구 console 창 -> 전체 Scroll down 
+-> 위의 JavaScript 코드 수행 -> URLs 수집
+<BR>
 ![Alt text](https://github.com/mysong105/team56/blob/master/crawling/javascript.JPG)
 <BR>
 
