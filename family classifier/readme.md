@@ -1,8 +1,8 @@
-## 이 폴더에 있는 코드는 IPCGAN에 통합할 Family Classifier의 모델, Family Classifier 데이터를 만들기 위한 딥러닝 모듈인 Face Point Detection 모듈에 대한 코드입니다.
+# 이 폴더에 있는 코드는 IPCGAN에 통합할 Family Classifier의 모델, Family Classifier 데이터를 만들기 위한 딥러닝 모듈인 Face Point Detection 모듈에 대한 코드입니다.
 
 세부 설명및 코드 블록 별 결과는 은 각 코드파일 안에 있습니다.
 
-# 1. Family classifier 모듈 및 논문 
+## 1. Family classifier 모듈 및 논문 
 
 - 논문 : Kinship_Verification_with_Deep_Convolutional_Neural_Networks.pdf
 
@@ -16,7 +16,7 @@
 ![Kinshipmodel](./Kinshipmodel.png)
 
 
-# 2.  Face Point Detection 모듈 및 데이터셋 
+## 2.  Face Point Detection 모듈 및 데이터셋 
 
 - 데이터셋: kaggle 에서 얻은 얼굴에 대한 부위별 좌표값 쌍 (용량 문제로 업로드 하지 않았습니다.)
 
