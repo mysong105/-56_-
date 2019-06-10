@@ -22,5 +22,6 @@ urls.txt 파일에서 urls 로드 -> loop 돌면서 각 url에 따른 이미지 
 -> 전체 파일들 다시 loop 돌면서 OpenCV로 열리는지 확인, 안 열릴 시 delete
 
 -> cmd창에서 '$ python [코드파일이름].py --urls urls.txt --output [저장디렋토리]' 명령 수행
+
 ![Alt text](https://github.com/mysong105/team56/blob/master/crawling/readme_images/cmd.JPG)
 <BR><BR>
