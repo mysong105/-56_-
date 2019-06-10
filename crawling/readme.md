@@ -7,14 +7,14 @@
 2차적으로 python 코드를 통해 수집된 url들을 이미지로 다운로드 했습니다. 
 <BR><BR>
   
-### * JavaScript : using jQuery library
+### * JavaScript : using jQuery library / code = ExtractURLs.JavaScript
 Google 이미지에서 키워드 검색 -> 개발자 도구 console 창 -> 전체 Scroll down 
 -> 위의 JavaScript 코드 수행 -> URLs 수집
 <BR><BR>
 ![Alt text](https://github.com/mysong105/team56/blob/master/crawling/readme_images/javascript.JPG)
 <BR><BR>
 
-### * Python : using requests library
+### * Python : using requests library / code = URLtoImage.py
 urls.txt 파일에서 urls 로드 -> loop 돌면서 각 url에 따른 이미지 다운로드
 
 -> 00000000.jpg 부터 1씩 증가하면서 디스크에 저장
