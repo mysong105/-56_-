@@ -5,7 +5,7 @@
 1차적으로 Google 이미지 개발자 도구 console 창에서 JavaScript 코드를 통해 키워드에 따른 이미지 url을 수집하였고,
 
 2차적으로 python 코드를 통해 수집된 url들을 이미지로 다운로드 했습니다. 
-<BR>
+<BR><BR>
   
 ### * JavaScript
 Google 이미지에서 키워드 검색 -> 개발자 도구 console 창 -> 전체 Scroll down 
