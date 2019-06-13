@@ -16,4 +16,4 @@ Google 이미지에서 특정 키워드로 검색해서 나온 결과를 각 url
 이 폴더에 있는 코드는 IPCGAN에 통합할 Family Classifier의 모델, Family Classifier 데이터를 만들기 위한 딥러닝 모듈인 Face Point Detection 모듈에 대한 코드입니다.
 
 ### ● test case
-IPCGAN의 test 결과입니다.
+IPCGAN의 test 결과입니다. 이에따라 데이터셋의 변화를 주기로 했습니다.
