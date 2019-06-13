@@ -23,7 +23,7 @@
 
 - 코드 : keypoint.ipynb 
 
-및 그외 
+및 그외 makedata0504.ipynb
 
 - 학습된 모델 파일 : my_model#.ipynb
 
