@@ -26,6 +26,7 @@
 ![Kinshipmodel](./Kinshipmodel.png)
 
 
+
 ## 2.  Face Point Detection 모듈(학습 및 테스트 완료) + 데이터셋 마련 위해 얼굴 부위별 잘라보기  
 
 - 학습 데이터셋: kaggle 에서 얻은 얼굴에 대한 부위별 좌표값 쌍 (용량 문제로 업로드 하지 않았습니다.)
