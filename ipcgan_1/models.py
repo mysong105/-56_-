@@ -170,6 +170,15 @@ class FaceAging(object):
             print(x.get_shape())
 
             return x
+    # WGAN GP , imgs
+    def gradient_penalty(self,imgs):
+        alpha = tf.random_uniform(shape=[self.flags.batch_size, 1, 1, 1], minval=0., maxval=1.)      
+        differences = self.g_source - imgs      
+        interpolates = imgs + (alpha * differences)     
+        gradients = tf.gradients(self.discriminator(interpolates, is_reuse=True), [interpolates])[0]
+        slopes = tf.sqrt(tf.reduce_sum(tf.square(gradients), reduction_indices=[1, 2, 3]))
+        gradient_penalty = tf.reduce_mean((slopes-1.)**2)
+        return gradient_penalty
 
     # conditional lsgan + batchnorm
     def train_age_lsgan_transfer(self, source_img_227, source_img_128, imgs, true_label_fea_128, true_label_fea_64,
@@ -208,13 +217,27 @@ class FaceAging(object):
         # fake image, true label
         D3_logits = discriminator(self.g_source, name='discriminator', condition=true_label_fea_64, reuse=True)
 
-        d_loss_real = tf.reduce_mean(tf.square(D1_logits - 1.))
-        d_loss_fake1 = tf.reduce_mean(tf.square(D2_logits))
-        d_loss_fake2 = tf.reduce_mean(tf.square(D3_logits))
+        
+        #-------------------------------------------------------------------------------------------
 
-        self.d_loss = (1. / 2 * (d_loss_real + 1. / 2 * (d_loss_fake1 + d_loss_fake2))) * self.gan_loss_weight
+        # discriminator loss
+        self.d_loss = tf.reduce_mean(D3_logits) - tf.reduce_mean(D1_logits)
+        # generator loss
+        self.g_loss = -tf.reduce_mean(D3_logits)
 
-        self.g_loss = (1. / 2 * tf.reduce_mean(tf.square(D3_logits - 1.))) * self.gan_loss_weight
+        #d_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='d_')
+        #g_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='g_')
+
+        # gradient penalty
+        gp_loss = self.gradient_penalty(imgs)
+        self.d_loss = self.d_loss + 10. * gp_loss #10. is lambda
+        
+        #-------------------------------------------------------------------------------------------
+        ##d_loss_real = tf.reduce_mean(tf.square(D1_logits - 1.))
+        ##d_loss_fake1 = tf.reduce_mean(tf.square(D2_logits))
+        ##d_loss_fake2 = tf.reduce_mean(tf.square(D3_logits))   
+        ##self.d_loss = (1. / 2 * (d_loss_real + 1. / 2 * (d_loss_fake1 + d_loss_fake2))) * self.gan_loss_weight
+        ##self.g_loss = (1. / 2 * tf.reduce_mean(tf.square(D3_logits - 1.))) * self.gan_loss_weight
 
         g_source = (self.g_source + 1.) * 127.5
         # self.tv_loss = total_variation_loss(g_source) * self.tv_loss_weight
