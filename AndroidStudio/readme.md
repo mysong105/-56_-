@@ -8,6 +8,10 @@
 사용자가 5,6,7세 아동의 모습을 촬영하거나 사진을 첨부 하면 해당 상세정보는 메인 서버로 전송되어 16~19세의 나이대로 노화된 모습의 결과물을 생성한다.<BR> 
 해당 생성된 사진을 다시 앱으로 전송하여 사용자가 현재의 모습과 비교할 수 있고 화면 하단의 공유 버튼을 누르면 원하는 공유 수단(ex. 카카오톡)을 이용하여 사진을 전송할 수 있다.<BR><BR>  
 
+### ● 폴더에 관한 설명입니다.
+Activity Java Source code: team56/AndroidStudio/app/src/main/java/com/example/agingapp/ <BR>
+XML 등 Resources: team56/AndroidStudio/app/src/main/res/<BR><BR>
+
 ### ● UI images
 본 어플리케이션에는 크게는 2가지 기능이 있다. <BR>
 - 5,6,7세의 사용자가 정면의 모습을 촬영하면 메인서버에서 IPCGAN을 거쳐 15~19세의 노화된 모습의 결과물을 받는 노화 카메라 기능<BR>
