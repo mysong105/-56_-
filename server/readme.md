@@ -1,3 +1,16 @@
-Server와 관련된 코드 소스들입니다.   
-안드로이드 통신 및 알고리즘 실행 - updown.php 파일  
-Gan 알고리즘 관련 코드 및 폴더 - 나머지 코드파일, _pycache_, checkpoints, logs, tools
+# Team56
+<h3> [커버린 원이]조  / 실종아동의 현재 나이 이미지 생성 및 찾기 프로젝트 (딥러닝 GAN 기반) </h3>
+<BR>
+  <h3>Server 와 관련된 폴더및 코드에 관한 설명입니다.</h3>
+
+
+### ● __pychache__, checkpoints, logs, tools
+Gan 알고리즘에 관련한 코드가 들어있는 폴더 입니다.  
+
+
+### ● updowa.php
+안드로이드 통신 및 알고리즘 실행 코드 입니다.
+
+### ● 나머지 코드
+Gan 알고리즘 코드입니다.
+
