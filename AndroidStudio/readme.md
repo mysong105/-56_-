@@ -9,8 +9,8 @@
 해당 생성된 사진을 다시 앱으로 전송하여 사용자가 현재의 모습과 비교할 수 있고 화면 하단의 공유 버튼을 누르면 원하는 공유 수단(ex. 카카오톡)을 이용하여 사진을 전송할 수 있다.<BR><BR>  
 
 ### ● 폴더에 관한 설명입니다.
-Activity Java Source code: team56/AndroidStudio/app/src/main/java/com/example/agingapp/ <BR>
-XML 등 Resources: team56/AndroidStudio/app/src/main/res/<BR><BR>
+Activity Java Source code: /app/src/main/java/com/example/agingapp/ <BR>
+XML 등 Resources: /app/src/main/res/<BR><BR>
 
 ### ● UI images
 본 어플리케이션에는 크게는 2가지 기능이 있다. <BR>
